@@ -6,7 +6,7 @@ import { MatDialogRef } from '@angular/material/dialog';
   templateUrl: './confirm-dialog.component.html',
   styleUrls: ['./confirm-dialog.component.css']
 })
-export class ConfirmDialogComponent implements OnInit {
+export class ConfirmDialogComponent {
 
   public title = 'Are you sure ?';
   public message = 'Do you really';
@@ -14,8 +14,4 @@ export class ConfirmDialogComponent implements OnInit {
   public confirmButtonLabel = 'Confirm';
 
   constructor( public dialogRef: MatDialogRef<ConfirmDialogComponent>) { }
-
-  ngOnInit(): void {
-  }
-
 }
